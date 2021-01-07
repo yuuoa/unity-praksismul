@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2021-01-08T01:02:32.591+07:00
+  initializedAtString: 2021-01-08T00:36:40.949+07:00
+  log:
+  - commitID: fde6aa52daa6ec07d8aff655f925e72e02117582
+    mergeA: 
+    mergeB: 
+    authorName: yuuoa
+    authorEmail: alwanandika@gmail.com
+    commitEmail: alwanandika@gmail.com
+    commitName: yuuoa
+    summary: first commit
+    description: first commit
+    timeString: 2021-01-08T00:37:35.000+07:00
+    commitTimeString: 2021-01-08T00:37:35.000+07:00
+    changes:
+    - path: .vscode\settings.json
+      fullPath: D:\Projekt\unity\Praktikum-Sistem-Multimedia\.vscode\settings.json
+      projectPath: .vscode\settings.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
