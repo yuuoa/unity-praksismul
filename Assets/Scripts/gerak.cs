@@ -53,6 +53,31 @@ public class gerak : MonoBehaviour
 
         tanah = Physics2D.OverlapCircle(deteksitanah.position, jangkauan, targetlayer);
 
+        if(heart <= 0)
+        {
+            Destroy(gameObject);
+            UI_Lose.SetActive(true);
+        }
+        else if (koin >= 5 && tanah == true)
+        {
+            UI_Win.SetActive(true);
+            anim.SetBool("idle", true);
+            anim.SetBool("lari", false);
+        }
+        else if (heart > 0 && koin < 5)
+        {
+            bergerak();
+        }
+
+        if(play_again == true)
+        {
+            transform.position = play;
+            play_again = false;
+        }
+    }
+
+    public void bergerak()
+    {
         if (Input.GetKey (KeyCode.RightArrow) || (Button_kanan == true))
         {
             transform.Translate(Vector2.right * kecepatan * Time.deltaTime);
@@ -68,11 +93,17 @@ public class gerak : MonoBehaviour
         else
         {
             anim.SetBool("lari", false);
+            anim.SetBool("idle", true);
         }
 
         if(tanah == true && Input.GetKey(KeyCode.X) || (Button_atas == true))
         {
             lompat.AddForce(new Vector2 (0, kekuatanlompat));
+            anim.SetBool("lompat", true);
+        }
+        else
+        {
+            anim.SetBool("idle", true);
         }
 
         if(tanah == true && Input.GetKey(KeyCode.Z) || (Button_bawah == true))
@@ -91,22 +122,6 @@ public class gerak : MonoBehaviour
         else if (pindah < 0 && balik)
         {
             flip();
-        }
-
-        if(heart <= 0)
-        {
-            Destroy(gameObject);
-            UI_Lose.SetActive(true);
-        }
-        else if (koin >= 5 && tanah == true)
-        {
-            UI_Win.SetActive(true);
-        }
-
-        if(play_again == true)
-        {
-            transform.position = play;
-            play_again = false;
         }
     }
 

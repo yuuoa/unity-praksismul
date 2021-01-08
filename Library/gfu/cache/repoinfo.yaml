@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-01-08T01:02:32.360+07:00
-  initializedAtString: 2021-01-08T00:36:35.827+07:00
+  lastUpdatedAtString: 2021-01-08T12:33:46.419+07:00
+  initializedAtString: 2021-01-08T06:57:47.610+07:00
   currentGitRemote:
     name: origin
     url: https://github.com/yuuoa/unity-praksismul.git
